@@ -1,0 +1,18 @@
+<!-- index.wxml -->
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="line"></view>
+<view class="line"></view>
+<text style="font-size:75%;margin-left:10px">我的订单</text> <text class="checkallorder">查看所有订单></text>
+<view class="line"></view>
+<view class="item" wx:for="{{array}}" wx:for-item="item">
+        <image class="item-image" mode="scaleToFill" src="{{item.image}}"> </image> \n 
+        <text class="item-name">{{item.text}}</text>    
+</view>
+<view class="item" wx:for="{{array}}" wx:for-item="item"></view>
+<view class="line" style="margin-top:80px;"></view>
+<view class="line"></view>
+<text style="font-size:75%;margin-left:10px">购物车</text>
+<view class="line"></view>

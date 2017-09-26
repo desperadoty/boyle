@@ -1,0 +1,44 @@
+/* pages/menu/menu.wxss */
+.title {
+  color: #06f;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+text {
+  font-size: 75%;
+}
+
+.item-name {
+  width:200px;
+  display:inline-block;
+  vertical-align: top;
+  margin-left:25px;
+}
+
+.item-price {
+  margin-left:-200px;
+}
+
+.menu-item {
+  margin-top:10px;
+  margin-left: 10px;
+}
+
+.addToCart {
+  width:20px;
+  height:20px;
+  float: right;
+  padding-right:20px;
+  padding-top:80px;
+}
+
+.line {
+  width:100%;
+  height:1px;
+  margin-left: 0px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  background: #e6e6fa;
+}

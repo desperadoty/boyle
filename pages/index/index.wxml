@@ -1,0 +1,17 @@
+<view class="menu">
+  <image class="logo" style="width:100%;height:200px" mode="scaleToFill" src="{{logo}}"></image>
+  <view class="menu-title">
+    <text class="title">主食沙拉</text>
+  </view>
+  <view class="menu-item">
+    <view class="menu-item" wx:for="{{goodsList}}" wx:for-item="item">
+      <view class="line"></view>
+      <view class="item-image">
+        <image style="width:100px; height:100px" mode="scaleToFill" src="{{logo}}"> </image>
+        <text class="item-name">{{item.name}}</text>
+        <text class="item-price">￥{{item.price}}</text>
+        <image bindtap="bindAddCart" id="{{item.id}}" class="addToCart" mode="scaleToFill" src="{{addToCart}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/pay/pay.wxml-->
+<text class="needleft">新增收货地址</text>
+<view class="line"></view>
+<!--订单详情-->
+<block wx:for="{{cart}}">
+  <view class="goods">
+    <!--左侧图片-->
+    <image src="{{item.image}}" class="good-img" />
+    <!--文字说明-->
+    <text class="good-name">{{item.name}}</text>
+    <!--价钱和购物加减的父盒子-->
+    <text class="price">￥{{item.price}}</text>
+    <!--数值-->
+    <text class="good-count">x{{item.goodsCount}}</text>
+  </view>
+  <view class="line"></view>
+</block>
+<text class="needleft">配送方式</text>
+<text class="needright">免运费</text>
+<view class="line"></view>
+<text class="needleft">留言</text>
+<input class="needright" placeholder='点击给商家留言'></input>
+<view class="line"></view>
+<text class="needleft">合计</text>
+<text class="needright">￥{{totalPrice}}</text>
+<view class="line"></view>
+<!--提交订单-->
+<button class="pay-btn" bindtap="WechatPay">提交订单</button>
